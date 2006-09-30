@@ -99,7 +99,7 @@ public class BloggerImpl implements Blogger {
 		int len = result.length;
 		Blog[] blogs = new Blog[len];
 		for (int i = 0; i < len; i++) {
-			Map<String, String> m = (Map<String, String>) result[0];
+			Map<String, String> m = (Map<String, String>) result[i];
 			blogs[i] = new Blog();
 			blogs[i].setBlogid(m.get("blogid"));
 			blogs[i].setBlogName(m.get("blogName"));
