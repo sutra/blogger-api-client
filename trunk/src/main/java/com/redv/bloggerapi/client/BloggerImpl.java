@@ -140,7 +140,7 @@ public class BloggerImpl implements Blogger {
 		try {
 			return client.execute(methodName, params);
 		} catch (XmlRpcException e) {
-			Fault fault = new Fault(e.getMessage(), e);
+			Fault fault = new Fault(e.getMessage(), e.getCause());
 			fault.setCode(e.code);
 			throw fault;
 		}
