@@ -5,6 +5,10 @@ package com.redv.bloggerapi.client;
 
 import java.io.Serializable;
 
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
+import org.apache.commons.lang.builder.ToStringBuilder;
+
 /**
  * @author Shutra
  * 
@@ -64,6 +68,51 @@ public class Blog implements Serializable {
 	 */
 	public void setUrl(String url) {
 		this.url = url;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null) {
+			if (this == null) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		if (obj instanceof Blog == false) {
+			return false;
+		}
+
+		Blog o = (Blog) obj;
+		return new EqualsBuilder().append(this.blogid, o.blogid).append(
+				this.url, o.url).isEquals();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		return new HashCodeBuilder().append(this.blogid).append(this.blogName)
+				.append(this.url).hashCode();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this);
 	}
 
 }
