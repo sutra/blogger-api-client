@@ -10,7 +10,10 @@ import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 /**
- * @author Shutra
+ * Short for weblog, a web-based personal journal or news site that makes it
+ * easy, even for nontechnical users, to publish on the web.
+ * 
+ * @author <a href="mailto:zhoushuqun@gmail.com">Sutra Zhou</a>
  * 
  */
 public class Blog implements Serializable {

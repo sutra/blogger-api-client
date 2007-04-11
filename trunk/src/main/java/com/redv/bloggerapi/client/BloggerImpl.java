@@ -13,7 +13,9 @@ import org.apache.xmlrpc.client.XmlRpcClientConfigImpl;
 import org.apache.xmlrpc.client.XmlRpcCommonsTransportFactory;
 
 /**
- * @author Shutra
+ * An implementation of Blogger API.
+ * 
+ * @author <a href="mailto:zhoushuqun@gmail.com">Sutra Zhou</a>
  * 
  */
 public class BloggerImpl implements Blogger {

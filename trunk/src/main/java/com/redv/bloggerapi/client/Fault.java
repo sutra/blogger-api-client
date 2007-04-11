@@ -4,7 +4,11 @@
 package com.redv.bloggerapi.client;
 
 /**
- * @author Shutra
+ * Errors are returned as an XML-RPC &lt;methodResponse&gt; with a &lt;fault&gt;
+ * item, containing a &lt;struct&gt; with a faultCode and a faultString, as
+ * defined by the XML-RPC spec.
+ * 
+ * @author <a href="mailto:zhoushuqun@gmai.com">Sutra Zhou</a>
  * 
  */
 public class Fault extends Exception {

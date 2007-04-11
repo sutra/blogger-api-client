@@ -6,7 +6,10 @@ package com.redv.bloggerapi.client;
 import java.io.Serializable;
 
 /**
- * @author Shutra
+ * An implementation of Blogger API for Java.
+ * 
+ * @see <a href="http://www.blogger.com/developers/api/1_docs/">Blogger API</a>
+ * @author <a href="mailto:zhoushuqun@gmail.com">Sutra Zhou</a>
  * 
  */
 public interface Blogger extends Serializable {
