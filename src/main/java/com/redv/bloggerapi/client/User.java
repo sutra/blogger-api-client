@@ -6,7 +6,9 @@ package com.redv.bloggerapi.client;
 import java.io.Serializable;
 
 /**
- * @author Shutra
+ * The user of a blog.
+ * 
+ * @author <a href="mailto:zhoushuqun@gmail.com">Sutra Zhou</a>
  * 
  */
 public class User implements Serializable {
