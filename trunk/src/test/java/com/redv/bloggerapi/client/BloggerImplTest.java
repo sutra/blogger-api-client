@@ -89,12 +89,14 @@ public class BloggerImplTest {
 	public void testGetUserInfo() throws Fault, MalformedURLException {
 		Blogger blogger = new BloggerImpl("http://www.bokeland.com/xmlrpc.php");
 		User user = blogger.getUserInfo("dummy", "blogmover", "xpert.cn");
-		assertEquals(user.getUserid(), "");
-		assertEquals(user.getEmail(), "");
-		assertEquals(user.getFirstname(), "");
-		assertEquals(user.getLastname(), "");
-		assertEquals(user.getNickname(), "");
-		assertEquals(user.getUrl(), "");
+		assertEquals("User id is not equals.", "722", user.getUserid());
+		assertEquals("Email is not equals.", "zhoushuqun@gmail.com", user
+				.getEmail());
+		assertEquals("First name is not equals.", "blogmover", user
+				.getFirstname());
+		assertEquals("Last name is not equals.", "", user.getLastname());
+		assertEquals("Nickname is not equals.", "blogmover", user.getNickname());
+		assertEquals("Url is not equals.", "", user.getUrl());
 	}
 
 	/**
