@@ -8,7 +8,7 @@ package com.redv.bloggerapi.client;
  * item, containing a &lt;struct&gt; with a faultCode and a faultString, as
  * defined by the XML-RPC spec.
  * 
- * @author <a href="mailto:zhoushuqun@gmai.com">Sutra Zhou</a>
+ * @author <a href="mailto:zhoushuqun@gmail.com">Sutra Zhou</a>
  * 
  */
 public class Fault extends Exception {
