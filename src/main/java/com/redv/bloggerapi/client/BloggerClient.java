@@ -27,6 +27,8 @@ public class BloggerClient {
 
 	public BloggerClient(Blogger blogger, String username, String password) {
 		this.blogger = blogger;
+		this.username = username;
+		this.password = password;
 	}
 
 	/**
